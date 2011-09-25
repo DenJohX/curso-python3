@@ -4,26 +4,25 @@ Bueno, siguiendo con el tema de las clases de programación, cada semana va a ha
 # Qué es python? Como se usa?
 
 
-Según wikipedia, "Se trata de un lenguaje de programación multiparadigma ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje 
-#interpretado, usa tipado dinámico, es fuertemente tipado y multiplataforma."
+Según wikipedia, "Se trata de un lenguaje de programación multiparadigma ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, usa tipado dinámico, es fuertemente tipado y multiplataforma."
 
 
-# Aja .. y eso qué quiere decir? , vamos por partes entonces:
+## Aja .. y eso qué quiere decir? , vamos por partes entonces:
 
 
-## Multiparadigma: 
+### Multiparadigma: 
 
 
 Como dice en la misma definición, porque soporta: Orientación a objetos, programación imperativa y programación funcional.
 
 
 
-## Interpretado: 
+### Interpretado: 
 
 
 Python lo haces funcionar con un interprete, no se compila como C por ejemplo, puede tener de ventaja no tener que re-compilar el programa para probar algún cambio, esto a cambio de un rendimiento levemente menor.
 
-## Fuertemente tipado: 
+### Fuertemente tipado: 
 
 
 En algunos lenguajes, se permite que un tipo sea tratado como otro, en circunstancias especiales, por ejemplo: sumar un caracter y un entero: '1' + 1 = 2 esto se conoce como débilmente tipado.
@@ -33,12 +32,12 @@ diferentes, a no ser que específicamente dentro del códigouno de los tipos
 sea convertido, para ajustarse al otro.
 
 
-## Multiplataforma: 
+### Multiplataforma: 
 
 Que se puede ejecutar en mas de 1 SO sin grandes cambios.
 
 
-## Dinamicamente tipado
+### Dinamicamente tipado
 
 Esto significa que las secciones de memoria para las variables
 no necesitan ser reservadas específicamente para un tipo, como sería el caso
