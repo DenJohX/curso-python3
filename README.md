@@ -10,17 +10,12 @@ Puede navegar libremente por los contenidos, y descargar los archivos, asi como 
 
 Dentro de los resumenes en ocaciones se coloca código, como se ve a continuación:
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+```python
+a = 1
+b = 2
+a == 1
+a != 1
+a == b
+a != b
 ```
 
-    #codigo python
-    print('hola mundo')
-    a = 1
-    b = 2
-    a == b
-    c == d
-    
-Este código no tiene resaltado, por limitaciones del server, pero se puede 
