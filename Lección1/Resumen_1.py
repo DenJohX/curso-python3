@@ -1,4 +1,3 @@
-
 Bueno, siguiendo con el tema de las clases de programación, cada semana va a haber un resumen en este blog sobre lo que se explico en el IRC ...
 
 #Que es python? Como se usa?
