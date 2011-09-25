@@ -1,14 +1,14 @@
 Bueno, siguiendo con el tema de las clases de programación, cada semana va a haber un resumen en este blog sobre lo que se explico en el IRC ...
 
 
-# Que es python? Como se usa?
+# Qué es python? Como se usa?
 
 
-# Según wikipato, "Se trata de un lenguaje de programación multiparadigma ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje 
+Según wikipedia, "Se trata de un lenguaje de programación multiparadigma ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje 
 #interpretado, usa tipado dinámico, es fuertemente tipado y multiplataforma."
 
 
-# Aja .. y eso que mierda quiere decir? , vamos por partes entonces:
+# Aja .. y eso qué quiere decir? , vamos por partes entonces:
 
 
 ## Multiparadigma: Como dice en la misma definición, porque soporta: Orientación a objetos, programación imperativa y programación funcional.
