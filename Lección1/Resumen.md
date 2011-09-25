@@ -11,19 +11,49 @@ Según wikipedia, "Se trata de un lenguaje de programación multiparadigma ya qu
 # Aja .. y eso qué quiere decir? , vamos por partes entonces:
 
 
-## Multiparadigma: Como dice en la misma definición, porque soporta: Orientación a objetos, programación imperativa y programación funcional.
+## Multiparadigma: 
 
 
-## Interpretado: Python lo haces funcionar con un interprete, no se compila como C por ejemplo, puede tener de ventaja no tener que re-compilar el programa para probar algún cambio, esto a cambio de un rendimiento levemente menor.
+Como dice en la misma definición, porque soporta: Orientación a objetos, programación imperativa y programación funcional.
 
-## Fuertemente tipado: En algunos lenguajes, se permite que un tipo sea tratado como otro, en circunstancias especiales, por ejemplo: sumar un caracter y un entero: '1' + 1 = 2 esto se conoce como débilmente tipado.
+
+
+## Interpretado: 
+
+
+Python lo haces funcionar con un interprete, no se compila como C por ejemplo, puede tener de ventaja no tener que re-compilar el programa para probar algún cambio, esto a cambio de un rendimiento levemente menor.
+
+## Fuertemente tipado: 
+
+
+En algunos lenguajes, se permite que un tipo sea tratado como otro, en circunstancias especiales, por ejemplo: sumar un caracter y un entero: '1' + 1 = 2 esto se conoce como débilmente tipado.
 En el caso de Python, esto no se permite, y se le conoce como
 fuertemente tipado, por lo que no se permite realizar operaciones entre tipos
 diferentes, a no ser que específicamente dentro del códigouno de los tipos
 sea convertido, para ajustarse al otro.
 
 
-## Multiplataforma: Que se puede ejecutar en mas de 1 SO sin grandes cambios.
+## Multiplataforma: 
+
+Que se puede ejecutar en mas de 1 SO sin grandes cambios.
+
+
+## Dinamicamente tipado
+
+Esto significa que las secciones de memoria para las variables
+no necesitan ser reservadas específicamente para un tipo, como sería el caso
+en C, en el que se definen los tipos de variables durante la compilación, y
+éstas no pueden cambiar durante la ejecución, por ejemplo, el resultado
+de una funcion que devuelve una cadena no podría asignarse a una variable
+previamente definida como un entero.
+
+En python no se tiene esta restricción, ya que es dinamicamente tipado, no
+necesita definir previamente el tipo de una variable, sino que se va dando
+dinamicamente durante el tiempo de ejecución. En python una variable puede
+cambiar de tipo en diferentes puntos de la ejecución.
+
+Se dice entonces, que en python, los tipos tienen una definición estricta,
+pero las variables no.
 
 
 # Bien, empezando con python, la consola interactiva ...
@@ -122,23 +152,3 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 
 Bueno, eso es todo por ahora amigos .. ya saben, si queren explicaciones mejores, les esperamos en el IRC, vale aclarar, que los martes estamos con explicaciones nuevas, toda la semana estamos 
 para consultas particulares ...
-
-
-
-## Dinamicamente tipado
-
-Esto significa que las secciones de memoria para las variables
-no necesitan ser reservadas específicamente para un tipo, como sería el caso
-en C, en el que se definen los tipos de variables durante la compilación, y
-éstas no pueden cambiar durante la ejecución, por ejemplo, el resultado
-de una funcion que devuelve una cadena no podría asignarse a una variable
-previamente definida como un entero.
-
-En python no se tiene esta restricción, ya que es dinamicamente tipado, no
-necesita definir previamente el tipo de una variable, sino que se va dando
-dinamicamente durante el tiempo de ejecución. En python una variable puede
-cambiar de tipo en diferentes puntos de la ejecución.
-
-Se dice entonces, que en python, los tipos tienen una definición estricta,
-pero las variables no.
-
