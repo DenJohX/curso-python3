@@ -32,11 +32,6 @@ diferentes, a no ser que específicamente dentro del códigouno de los tipos
 sea convertido, para ajustarse al otro.
 
 
-### Multiplataforma: 
-
-Que se puede ejecutar en mas de 1 SO sin grandes cambios.
-
-
 ### Dinamicamente tipado
 
 Esto significa que las secciones de memoria para las variables
@@ -53,6 +48,13 @@ cambiar de tipo en diferentes puntos de la ejecución.
 
 Se dice entonces, que en python, los tipos tienen una definición estricta,
 pero las variables no.
+
+
+
+### Multiplataforma: 
+
+Que se puede ejecutar en mas de 1 SO sin grandes cambios.
+
 
 
 # Bien, empezando con python, la consola interactiva ...
@@ -114,7 +116,7 @@ Como se habran dado cuenta, las variables en python no hace falta declarar el ti
 variable que contiene el resultado sera float.
 
 
-# Operadores de comparacion
+# Operadores de comparación
 
 
 Vale aclarar a estas alturas del partido, que se supone que tienen un conocimiento minimo de programacion, por esa razon obvio explicaciones mas detalladas ...
