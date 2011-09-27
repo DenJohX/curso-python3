@@ -41,3 +41,13 @@ Los símbolos al principio (>>>) significan que se está trabajando en una conso
 interactiva, en caso contrario se esta hablando de un trozo de código genérico a
 modo de ejemplo, y que podría no ejecutarse bien en una sesión de consola
 interactiva.
+
+
+## Programa del curso
+
+
+Este es un curso básico, no se pretende adentrarse demasiado en el lenguaje, en
+todo caso se pretende que se comprendan muy bien las bases.
+
+
+El programa mas completo, puede encontrarse en el fichero Programa.md
