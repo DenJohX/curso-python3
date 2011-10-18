@@ -34,7 +34,7 @@ dentro de la misma cadena, podemos hacerlo de dos formas:
 
 ```python
 >>> "Esta es una cadena, que contiene 'comillas' simples en su interior"
->>> 'Esta es otra cadena, en este caso cintiene "comillas" dobles en su interior'
+>>> 'Esta es otra cadena, en este caso contiene "comillas" dobles en su interior'
 ```
 
 #### Utilizando un caracter de escape
@@ -57,7 +57,7 @@ del siguiente caracter, en este caso las comillas.
 
 Muchos se van a sorprender por la simplicidad con la que Python maneja las cadenas, bueno, dejemonos de parloterio, a darle.
 
-```
+```python
 >>> cadena = "esto es una cadena"
 >>> cadena1 = 'esto tambien es una cadena'
 >>> type(cadena)
@@ -67,87 +67,86 @@ Muchos se van a sorprender por la simplicidad con la que Python maneja las caden
 ```
 
 ## Subcadenas
-Vale decir que en un aspecto las cadenas de Python son parecidas a las de C, vamos a ver porque.
+
+
+Vale decir que en un aspecto las cadenas de Python estan compuestas por una
+susceción ordenada de caracteres, cada uno numerado por un índice que comienza a
+contar de 0, tomando como ejemplo una cadena con las vocales, esto sería como 
+se describe a continuación:
 
 
 ```
++-----------+---+---+---+---+---+
+| indice    | 0 | 1 | 2 | 3 | 4 |
++-----------+---+---+---+---+---+
+| caracter  | a | e | i | o | u |
++-----------+---+---+---+---+---+
+```
+
+
+Así por ejemplo, podemos seleccionar subcadenas, de la manera siguiente:
+
+
+```python
+>>> cadena = 'abcdefghijklmñopqrstuvwxyz'
+>>> cadena
+'abcdefghijklmñopqrstuvwxyz'
+>>> cadena[1]
+'b'
 >>> cadena[2]
-'n'
+'c'
+>>> cadena[3]
+'d'
 ```
 
 
-Como se dieron cuenta, si usamos "[]" podemos obtener solamente 1 letra de la cadena, las cadenas se almacenan en arrays, asi que poniendo el indice de la letra que queremos entre corchetes podemos tener una subcadena, vale aclarar que los indices empiezan de 0.
-
-Vamos a ver lo siguiente.
-
+Usando "[]" podemos obtener una porción de la la cadena, si solo colocamos un
+número, como en el ejemplo de arriba, obtendremos sólo un caracter.
 
 
-```
->>> cadena[2:3]
-'n'
->>> cadena[2:5]
-'nso'
->>> cadena[0:8]
-'sonsos'
->>> cadena[0:7]
-'sonsos'
->>> cadena[0:6]
-'sonsos'
->>> cadena[0:5]
-'sonso'
+Veamos lo siguiente:
+
+
+```python
+>>> cadena[0:3]
+'abc'
+>>> cadena[0:10]
+'abcdefghij'
+>>> cadena[5:10]
+'fghij'
+>>> cadena[10:20]
+'klmñopqrst'
 ```
 
+### (Explicación matemática)
+Haciendo un equivalente a teoria de conjuntos, seria como definir el ingervalo
+de elementos, (comenzando el conteo de 0) con un extremo cerrado y el otro
+abierto, es decir [a, b), esta selección devuelve los caracteres de índice
+i, expresado como {i | a <= i < b}
 
 
-Podemos quitar mas de 1 letra al mismo tiempo, hacemos lo siguiente, el primer numero, va a ser el indice de la primera letra, y el segundo numero, el indice de la ultima letra +1, porque, si se fijan de "sonsos" hicimos [0:2], nos tendria que devolver la letra en posicion 0,1 y 2 no?, en Python esto no funciona de esa manera, siempre le resta una posicion al segundo indice, en el caso de [0:2] nos devolvio la letra en posicion 0 y 1.
+Así, vemos que python, en el primer ejemplo devuelve las primeras tres letras,
+que corresponden a los índices 0, 1, y 2
 
 
 
+Ahora, otro ejemplo.
+
+
+```python
+>>> cadena[0:20:1]
+'abcdefghijklmñopqrst'
+>>> cadena[0:20:2]
+'acegikmoqs'
+>>> cadena[0:20:3]
+'adgjmps'
+>>> cadena[0:20:4]
+'aeimq'
+>>> cadena[0:20:5]
+'afkp'
+>>> cadena[0:20:6]
+'agms'
 ```
->>> cadena[0:6:2]
-'sno'
->>> cadena[0:6:1]
-'sonsos'
->>> cadena[0:6:3]
-'ss'
-```
 
-
-Tambien podemos hacer que vaya de 2 en 2, o 3 en 3, simplemente poniendo un tercer numero separado con doble punto del segundo.
-
-Listas
-Los que hayan trabajado con otros lenguajes como ser Pascal o C, conocen los que son los vectores, o arreglo unidimensionales, en si, las listas son eso, pero, con una pequeña diferencia, carece de una caracteristica para ser llamados vectores, no son de un solo tipo, mejor veamos con un ejemplo.
-?
-1
-2
-3
-4
-5
-6
-7
->>> lista = ["sonsos",3,3.5]
->>> type(lista)
-<class 'list'>
->>> lista[1]
-3
->>> lista[2]
-3.5
-Las listas se definen con "[]", y como se dieron cuenta, es como un vector, pero, sin la limitacion de siempre usar el mismo tipo, y tambien cada elemento de una lista puede contener otra lista.
-?
-1
-2
-3
-4
-5
-6
->>> lista = ["a",2.5,40]
->>> lsita1 = ["sonsos",80,[lista]]
->>> lsita1
-['sonsos', 80, [['a', 2.5, 40]]]
->>> lsita1[2]
-[['a', 2.5, 40]]
-
-Entrada/Salida
-Mucha consola interactiva, mucho variables, listas, pero, como le pido datos al usuario? como le informo los resultados?, como de costumbre, Python tiene funciones para eso, print e input, respectivamente.
-[CONTINUARA ... ]
-
+En ese caso seleccionamos el rango, con los dos primeros números, y el tercero
+define si se van a seleccionar los caracteres de uno en uno, de dos en dos, etc.
