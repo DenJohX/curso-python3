@@ -119,7 +119,7 @@ Veamos lo siguiente:
 ```
 
 *Explicación matemática:* Haciendo un equivalente a teoria de conjuntos, 
-seria como definir el ingervalo de elementos, (comenzando el conteo de 0) 
+seria como definir el intervalo de elementos, (comenzando el conteo de 0) 
 con un extremo cerrado y el otro
 abierto, es decir [a, b), esta selección devuelve los caracteres de índice
 i, expresado como {i | a <= i < b}
@@ -150,3 +150,207 @@ Ahora, otro ejemplo.
 
 En ese caso seleccionamos el rango, con los dos primeros números, y el tercero
 define si se van a seleccionar los caracteres de uno en uno, de dos en dos, etc.
+
+
+
+## Operaciones con Cadenas
+
+
+Python tambien permite hacer operaciones con cadenas, entre ellas sumas y
+multiplicaciones
+
+
+### Suma
+
+```python
+>>> 'cadena' + 'cadena'
+'cadenacadena'
+>>> 'cadena1' + 'cadena2'
+'cadena1cadena2'
+```
+
+La suma solo puede realizarse entre dos variables de tipo cadena
+
+
+### Multiplicación
+
+
+```python
+>>> 'cadena1' * 3
+'cadena1cadena1cadena1'
+>>> 'cadena2' * 8
+'cadena2cadena2cadena2cadena2cadena2cadena2cadena2cadena2'
+```
+
+La multiplicación siempre debe realizarse con una cadena y un número entero
+positivo.
+
+
+
+
+# Listas
+
+
+Las listas son un tipo especialmente útil en python, puden ser usadas como
+equivalente al array de otros lenguajes, pero con la ventaja de que cada
+elemento de la lista puede ser de cualquier tipo, incluyendo otra lista.
+
+
+
+## Declaración
+
+
+Una lista se declara escribiendo los elementos dentro de corchetes __[ ]__
+separando cada uno por una coma __,__
+
+
+Ejemplo:
+
+```python
+>>> [0, 1, 2, 3, 4, 5, 6]
+```
+
+Cada uno de los elementos en el ejemplo anterior es un número, pero tambien
+podemos incluír otros tipos, como por ejemplo cadenas, u otras listas
+
+
+```python
+>>> [0, 1, 'cadena', 'otra cadena', 3, 4]
+>>> ['a continuacion una lista', ['elementos','dentro','de otra','lista']]
+>>> [6, 2, [2.4, 3.2, ['a','b','c'], 1.5]]
+```
+
+
+## Trabajo con listas
+
+
+Al igual que con las cadenas, las listas tienen elementos numerados desde el 0,
+y podemos accesar a los mismos de la misma forma que una cadena.
+
+
+```python
+>>> lista = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis']
+>>> lista[0]
+'cero'
+>>> lista[3]
+'tres'
+>>> lista[6]
+'seis'
+```
+
+
+En el caso de las listas, a diferencia de  una cadena, podemos tambien modificar
+los elementos a nustro gusto, por ejemplo:
+
+
+```python
+>>> lista = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis']
+>>> lista[6] = 6
+>>> lista[1] = 1
+>>> lista
+['cero', 1, 'dos', 'tres', 'cuatro', 'cinco', 6]
+```
+
+Como se observa en el ejemplo, hemos asignado números a los índices 1 y 6
+respectivamente, y al final mostramos el contenido de la variable, observando
+los cambios.
+
+
+Tambien es simple cortar trozos de la lista, como se observa a continuación:
+
+
+```python
+>>> lista[2:4]
+['dos', 'tres']
+>>> lista[0:4]
+['cero', 1, 'dos', 'tres']
+>>> lista[4:1]
+[]
+>>> lista[0:6:1]
+['cero', 1, 'dos', 'tres', 'cuatro', 'cinco']
+>>> lista[0:6:2]
+['cero', 'dos', 'cuatro']
+>>> lista[0:6:3]
+['cero', 'tres']
+```
+
+
+### Trabajo con listas anidadas
+
+
+Ya que pyton permite definir una lista dentro de otra, esto conocido como listas
+anidadas, o listas de varias dimensiones. También nos permite trabajar
+directamente sobre las listas internas, como vemos a continuación.
+
+```python
+>>> lista1 = [0, 1, 2]
+>>> lista2 = [3, 4, 5]
+>>> lista3 = [6, 7, 8]
+>>> lista = [lista1, lista2, lista3]
+>>> lista
+[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+
+```
+
+
+Como se puede ver, hemos definido una lista, que contiene 3 listas mas, ahora
+veamos como acceder a los elementos de la primera lista (primer elemento, índice
+0)
+
+
+```python
+>>> lista[0]
+[0, 1, 2]
+>>> lista[0][0]
+0
+>>> lista[0][1]
+1
+>>> lista[0][2]
+2
+```
+
+
+Y de la misma forma, podemos acceder a las otras listas (elementos 1 y 2)
+
+```python
+>>> lista[1]
+[3, 4, 5]
+>>> lista[2]
+[6, 7, 8]
+>>> lista[2][1]
+7
+>>> lista[2][2]
+8
+```
+
+
+Python también nos permite hacer selecciones mas complejas:
+
+``` python
+>>> lista[2][1:3]
+[7, 8]
+>>> lista[1][0:3]
+[3, 4, 5]
+>>> lista[1][0:2]
+[3, 4]
+```
+
+
+## Operaciones con listas
+
+
+Las listas tambien pueden operarse, al igual que las cadenas, con sumas y
+multiplicaciones
+
+
+```python
+>>> lista = [0, 1, 2]
+>>> lista2 = [3, 4, 5]
+>>> lista * 5
+[0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2]
+>>> lista + lista2
+[0, 1, 2, 3, 4, 5]
+```
+
+Al igual que con las cadenas, las sumas se realizan entre dos listas y las
+multiplicaciones entre una lista y un numero entero positivo.
