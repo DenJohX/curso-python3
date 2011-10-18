@@ -118,9 +118,9 @@ Veamos lo siguiente:
 'klmñopqrst'
 ```
 
-### (Explicación matemática)
-Haciendo un equivalente a teoria de conjuntos, seria como definir el ingervalo
-de elementos, (comenzando el conteo de 0) con un extremo cerrado y el otro
+*Explicación matemática:* Haciendo un equivalente a teoria de conjuntos, 
+seria como definir el ingervalo de elementos, (comenzando el conteo de 0) 
+con un extremo cerrado y el otro
 abierto, es decir [a, b), esta selección devuelve los caracteres de índice
 i, expresado como {i | a <= i < b}
 
