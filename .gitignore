@@ -1,0 +1,9 @@
+# vim cache
+*.swp
+
+# generic cache
+~*
+
+# python compiled
+*.pyc
+*.pyo
